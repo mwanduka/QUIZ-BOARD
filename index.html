@@ -5,6 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <img src="https://i0.wp.com/thewrightobgyn.com/wp-content/uploads/2017/03/ready-quiz.gif?resize=489%2C181&ssl=1" width="100" height="200">
     <title>JavaScript Quiz Board</title>
   </head>
   <body>
@@ -13,104 +14,39 @@
     <h1>JavaScript Quiz Board</h1>
     <p>Attempt all questions and select the correct answer</p>
   </div>
-    <h2 class="bg-success">Does JavaScript support automatic type conversion</h2>
-    <div class="radio">
-        <label>
-          <input type="radio" name="answer" value="No" checked>
-          No
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value="Yes" checked>
-          Yes
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value="Maybe" checked>
-          Maybe
-        </label>
-      </div>
-      <h3 class="bg-success">Name the function which is used to convert nonnumeric values to numbers</h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value=".Number()" checked>
-          .Number()
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value=".parseInt()" checked>
-          .parseInt()
-        </label>
-      </div>
-        <label>
-          <input type="radio" name="answer" value="An object is the act taken on an element" checked>
-          An object is the act taken on an element
-        </label>
-      </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="An object is just a container for a collection of named values" checked>
-            An object is just a container for a collection of named values
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="An object is the function that is done on an element" checked>
-            An object is the function that is done on an element
-          </label>
-        </div>
-        <h4 class="bg-success">What does unshift() method do?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="It removes the first element in an array" checked>
-            It removes the first element in an array
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="It adds the desired number of element to the top of an array" checked>
-            It adds the desired number of element to the top of an array
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Its removes the last element of an array" checked>
-            Its removes the last element of an array
-          </label>
-        </div>
-        <h5 class="bg-success">What does onDocumentReady do?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Facilitate the runnig of the code" checked>
-            Facilitate the runnig of the code
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Allows early manipulation of the code" checked>
-            Allows early manipulation of the code
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Leads to a substantial delay before any code is executed" checked>
-            Leads to a substantial delay before any code is executed
-          </label>
-        </div>
-          <input type="radio" name="answer" value="logs default" checked>
-          logs default
-        </label>
-      </div>
-      <h3>Drop the box to select if JavaScript support automatic type conversion<h3>
-      <select class="form-control" id="conversion">
-        <option>Yes</option>
-        <option>No</option>
-        <option>Maybe</option>
-        </label>
-      </div>
+
+      <form id="Quiz" name="Quiz">
+        <p class="bg-success">1.What is an object in JavaScript?</p>
+            <input type="radio" name="answer" value="An object is the act taken on an element">
+            An object is the act taken on an element<br>
+            <input type="radio" name="answer" value="An object is just a container for a collection of named values">
+            An object is just a container for a collection of named values<br>
+            <input type="radio" name="answer" value="An object is the function that is done on an element">
+            An object is the function that is done on an element<br>
+
+        <p class="bg-success">2.What does unshift( ) method do?</p>
+            <input type="radio" name="answer" value="It removes the first element in an array">
+            It removes the first element in an array<br>
+            <input type="radio" name="answer" value="It adds the desired number of element to the top of an array">
+            It adds the desired number of element to the top of an array<br>
+            <input type="radio" name="answer" value="Its removes the last element of an array">
+            Its removes the last element of an array<br>
+
+        <p class="bg-success">3.What does onDocumentReady do?</p>
+            <input type="radio" name="answer" value="Facilitate the runnig of the code">
+            Facilitate the runnig of the code<br>
+            <input type="radio" name="answer" value="Allows early manipulation of the code">
+            Allows early manipulation of the code<br>
+            <input type="radio" name="answer" value="Leads to a substantial delay before any code is executed">
+            Leads to a substantial delay before any code is executed<br>
+            <input id="button" type="button" value="Submit" onclick="submit()">
+            <input type="button" id="reset" value="Reload" onclick="reload()">
+
+        </form>
+          <div  id="after_submit">
+
+            <p id="message"></p>
+            <p id="number_correct"></p>
     </div>
   </body>
 </html>
