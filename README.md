@@ -18,7 +18,7 @@ HTML
 CSS
 GIT AND GITHUB
 ## Live link to the site
-
+ https://mwanduka.github.io/QUIZ-BOARD/
 ## Support and contact details
 E-mail:mwandukastephen20@gmail.com
 ### License
