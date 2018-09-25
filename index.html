@@ -1,132 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>JavaScript Quiz Board</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <title>JavaScript Quiz Board</title>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuA6J3V4VjrySt9I7RM4OksP2NCJw-VfPq9pPWQvUJmiGefYoXw" width="300" height="100"><br>
   </head>
+
   <body>
-    <div class="container">
+      <div class="container">
       <div class="jumbotron">
-    <h1>JavaScript Quiz Board</h1>
-    <p>Attempt all questions and select the correct answer</p>
-  </div>
-    <h2 class="bg-success">Does JavaScript support automatic type conversion</h2>
-    <div class="radio">
-        <label>
-          <input type="radio" name="answer" value="No" checked>
-          No
-        </label>
+      <h1>JavaScript Quiz Board</h1>
+      <p>Attempt all questions and select the correct answer in each</p><br>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value="Yes" checked>
-          Yes
-        </label>
+
+      <p class="bg-success">1.What is an object in JavaScript?</p>
+            <input type="radio" name="question1" value="0">
+            An object is the act taken on an element<br>
+            <input type="radio" name="question1" value="20">
+            An object is just a container for a collection of named values<br>
+            <input type="radio" name="question1" value="0">
+            An object is the function that is done on an element<br>
+
+      <p class="bg-success">2.What does unshift( ) method do?</p>
+            <input type="radio" name="question2" value="0">
+            It removes the first element in an array<br>
+            <input type="radio" name="question2" value="20">
+            It adds the desired number of element to the top of an array<br>
+            <input type="radio" name="question2" value="0">
+            Its removes the last element of an array<br>
+
+      <p class="bg-success">3.What does onDocumentReady do?</p>
+            <input type="radio" name="question3" value="0">
+            Facilitate the runnig of the code<br>
+            <input type="radio" name="question3" value="20">
+            Allows early manipulation of the code<br>
+            <input type="radio" name="question3" value="0">
+            Leads to a substantial delay before any code is executed<br>
+
+            <button type="submit" class="btn"> submit </button>
+    </form>
+
+      <div id="result"></div>
+
       </div>
-      <div class="radio">
-        <label>
-<<<<<<< HEAD
-          <input type="radio" name="answer" value="Maybe" checked>
-          Maybe
-        </label>
-      </div>
-      <h3 class="bg-success">Name the function which is used to convert nonnumeric values to numbers</h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value=".Number()" checked>
-          .Number()
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value=".parseInt()" checked>
-          .parseInt()
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value=".concat()" checked>
-          .concat()
-        </label>
-      </div>
-      <h4 class="bg-success">What is an object in JavaScript?</h4>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer" value="An object is the act taken on an element" checked>
-          An object is the act taken on an element
-        </label>
-      </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="An object is just a container for a collection of named values" checked>
-            An object is just a container for a collection of named values
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="An object is the function that is done on an element" checked>
-            An object is the function that is done on an element
-          </label>
-        </div>
-        <h4 class="bg-success">What does unshift() method do?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="It removes the first element in an array" checked>
-            It removes the first element in an array
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="It adds the desired number of element to the top of an array" checked>
-            It adds the desired number of element to the top of an array
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Its removes the last element of an array" checked>
-            Its removes the last element of an array
-          </label>
-        </div>
-        <h5 class="bg-success">What does onDocumentReady do?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Facilitate the runnig of the code" checked>
-            Facilitate the runnig of the code
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Allows early manipulation of the code" checked>
-            Allows early manipulation of the code
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Leads to a substantial delay before any code is executed" checked>
-            Leads to a substantial delay before any code is executed
-          </label>
-        </div>
-=======
-          <input type="radio" name="answer" value="logs default" checked>
-          logs default
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="color">Which color is bg-danger in JavaScript?</label>
-        <input id="color" class="form-control" type="color">
-      </div><br>
-      <h3>Drop the box to select if JavaScript support automatic type conversion<h3>
-      <select class="form-control" id="conversion">
-        <option>Yes</option>
-        <option>No</option>
-        <option>Maybe</option>
-        </label>
-      </div>
-     
->>>>>>> 53c61356f3bdbcd1f6c9eec080ebb5bddcd29d46
-    </div>
+
   </body>
 </html>
