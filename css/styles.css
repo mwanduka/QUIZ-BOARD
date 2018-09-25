@@ -1,32 +1,9 @@
 img{
-  width: 100%
+  width: 100%;
 }
 .jumbotron {
-  background-color:#0000CD;
+  background-color:#7B68EE;
 }
 .container {
-  background-color: #8FBC8F;
-}
-#button:hover {
- background: white;
- border: 1px solid red;
- color: black;
- cursor: pointer;
-}
-
-#after_submit {
- visibility: black;
- background: blue;
- padding: 10px 20px 10px 20px;
- width: 500px;
- border-radius: 20px;
- float: left;
- margin-left: 20px;
- font-size: 30px;
-}
-#submit:hover {
- background: white;
- border: 1px solid red;
- color: black;
- cursor: pointer;
+  background-color:#F0FFFF;
 }
