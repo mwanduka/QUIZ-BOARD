@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>JavaScript Quiz Board</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <img src="https://i0.wp.com/thewrightobgyn.com/wp-content/uploads/2017/03/ready-quiz.gif?resize=489%2C181&ssl=1" width="100" height="200">
-    <title>JavaScript Quiz Board</title>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuA6J3V4VjrySt9I7RM4OksP2NCJw-VfPq9pPWQvUJmiGefYoXw" width="300" height="100"><br>
   </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-    <h1>JavaScript Quiz Board</h1>
-    <p>Attempt all questions and select the correct answer</p>
-  </div>
 
-      <form id="Quiz" name="Quiz">
-        <p class="bg-success">1.What is an object in JavaScript?</p>
-            <input type="radio" name="answer" value="An object is the act taken on an element">
+  <body>
+      <div class="container">
+      <div class="jumbotron">
+      <h1>JavaScript Quiz Board</h1>
+      <p>Attempt all questions and select the correct answer in each</p><br>
+      </div>
+
+      <p class="bg-success">1.What is an object in JavaScript?</p>
+            <input type="radio" name="question1" value="0">
             An object is the act taken on an element<br>
-            <input type="radio" name="answer" value="An object is just a container for a collection of named values">
+            <input type="radio" name="question1" value="20">
             An object is just a container for a collection of named values<br>
-            <input type="radio" name="answer" value="An object is the function that is done on an element">
+            <input type="radio" name="question1" value="0">
             An object is the function that is done on an element<br>
 
-        <p class="bg-success">2.What does unshift( ) method do?</p>
-            <input type="radio" name="answer" value="It removes the first element in an array">
+      <p class="bg-success">2.What does unshift( ) method do?</p>
+            <input type="radio" name="question2" value="0">
             It removes the first element in an array<br>
-            <input type="radio" name="answer" value="It adds the desired number of element to the top of an array">
+            <input type="radio" name="question2" value="20">
             It adds the desired number of element to the top of an array<br>
-            <input type="radio" name="answer" value="Its removes the last element of an array">
+            <input type="radio" name="question2" value="0">
             Its removes the last element of an array<br>
 
-        <p class="bg-success">3.What does onDocumentReady do?</p>
-            <input type="radio" name="answer" value="Facilitate the runnig of the code">
+      <p class="bg-success">3.What does onDocumentReady do?</p>
+            <input type="radio" name="question3" value="0">
             Facilitate the runnig of the code<br>
-            <input type="radio" name="answer" value="Allows early manipulation of the code">
+            <input type="radio" name="question3" value="20">
             Allows early manipulation of the code<br>
-            <input type="radio" name="answer" value="Leads to a substantial delay before any code is executed">
+            <input type="radio" name="question3" value="0">
             Leads to a substantial delay before any code is executed<br>
-            <input id="button" type="button" value="Submit" onclick="submit()">
-            <input type="button" id="reset" value="Reload" onclick="reload()">
 
-        </form>
-          <div  id="after_submit">
+            <button type="submit" class="btn"> submit </button>
+    </form>
 
-            <p id="message"></p>
-            <p id="number_correct"></p>
-    </div>
+      <div id="result"></div>
+
+      </div>
+
   </body>
 </html>
